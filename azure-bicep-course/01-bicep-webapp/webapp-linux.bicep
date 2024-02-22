@@ -4,7 +4,7 @@ param linuxFxVersion string = 'php|7.4' // The runtime stack of web app
 param location string = resourceGroup().location // Location for all resources
 
 var appServicePlanName = toLower('AppServicePlan-${webAppName}')
-var webSiteName = toLower('wapp-${webAppName}')
+var webSiteName = toLower('exceed-${webAppName}')
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
   name: appServicePlanName
