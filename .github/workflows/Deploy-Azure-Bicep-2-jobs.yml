@@ -12,8 +12,8 @@ on:
   workflow_dispatch:
 
 env:
-  RESOURCE_GROUP: rg-bicep-github-actions-20240224060725
-  WEBAPP_NAME: bicep-2024022400725
+  RESOURCE_GROUP: rg-bicep-github-actions-20240224060735
+  WEBAPP_NAME: bicep-2024022400735
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
