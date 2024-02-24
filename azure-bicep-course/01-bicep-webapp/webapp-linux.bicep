@@ -3,7 +3,7 @@ param sku string = 'B1' // The SKU of App Service Plan
 param linuxFxVersion string = 'php|7.4' // The runtime stack of web app
 param location string = resourceGroup().location // Location for all resources
 
-var appServicePlanName = toLower('AppServicePlan-${webAppName}')
+var appServicePlanName = toLower('exceedAppServicePlan-${webAppName}')
 var webSiteName = toLower('exceed-${webAppName}')
 
 resource appServicePlan 'Microsoft.Web/serverfarms@2020-06-01' = {
