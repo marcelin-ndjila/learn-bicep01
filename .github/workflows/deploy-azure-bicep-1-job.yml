@@ -48,7 +48,7 @@ jobs:
         with:
           subscription: ${{ secrets.AZURE_SUBSCRIPTION  }} # Subscription ID
           resourceGroup: $RESOURCE_GROUP # Resource group name
-          templateFile: 01-bicep-webapp/webapp-linux.bicep # ARM template or Bicep file
+          templateFile: ./azure-bicep-course/01-bicep-webapp/webapp-linux.bicep # ARM template or Bicep file
           # parametersFile: # optional # Parameters file for the ARM template or Bicep
           # Additional parameters to be applied on the ARM template or Bicep. Multiple parameters should be separated by spaces.
           additionalParameters: webAppName=$WEBAPP_NAME # optional
@@ -58,6 +58,6 @@ jobs:
         with:
           subscriptionId: ${{ secrets.AZURE_SUBSCRIPTION }}
           resourceGroupName: ${{ env.RESOURCE_GROUP }} # $RESOURCE_GROUP
-          template: 01-bicep-webapp/webapp-linux.bicep
+          template: ./azure-bicep-course/01-bicep-webapp/webapp-linux.bicep
           parameters: webAppName=${{ env.WEBAPP_NAME }}
           failOnStdErr: false
